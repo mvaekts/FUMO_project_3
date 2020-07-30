@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TableView fx:id="ValuesTable" prefHeight="182.0" prefWidth="600.0" AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="firstCol" prefWidth="150.0" text="C1" />
+            <TableColumn fx:id="secondCol" prefWidth="150.0" text="C2" />
+            <TableColumn fx:id="thirdCol" prefWidth="150.0" text="C3" />
+            <TableColumn fx:id="fourthCol" prefWidth="150.0" text="C4" />
+        </columns>
+      </TableView>
+      <Button layoutX="22.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#FillRandomClick" text="Заполнить случайными числами" />
+      <Button layoutX="229.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#SolveClick" text="Выполнить задание" />
+      <Label fx:id="maximumLabel" layoutX="387.0" layoutY="212.0" text="Максимальный элемент:" />
+      <Label fx:id="minimumLabel" layoutX="387.0" layoutY="237.0" text="Минимальный элемент:" />
+      <Pane layoutY="300.0" prefHeight="75.0" prefWidth="600.0" style="-fx-border-color: black;">
+         <children>
+            <Label layoutX="75.0" layoutY="12.0" prefWidth="450.0" text="Если максимальный элемент в таблице больше минимального в 10 раз, то все нули заменить единицами, а отрицательные числа зменить их значениями по модулю " textAlignment="CENTER" wrapText="true" />
+         </children></Pane>
+   </children>
+</AnchorPane>
